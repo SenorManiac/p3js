@@ -6,13 +6,13 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dest"), // Change 'dist' to 'dest'
+    path: path.resolve(__dirname, "dist"), // Change 'dist' to 'dest'
     clean: true,
   },
   devtool: "eval-source-map",
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "dest"), // Serve files from 'dest'
+      directory: path.resolve(__dirname, "dist"), // Serve files from 'dest'
     },
     watchFiles: ["./src/template.html"],
     compress: true,
